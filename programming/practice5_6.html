@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>5장 예제</title>
+    <style>
+        span{
+            visibility:hidden;
+        }
+        p{
+            border:1px solid gray;
+            width:15em;
+            height:3em;
+        }
+        .hidden{
+            overflow:hidden;
+        }
+        .visible{
+            overflow:visible;
+        }
+        .scroll{
+            overflow:scroll;
+        }
+        div>ul{
+            background:goldenrod;
+            padding:10px 10px 10px 30px;
+        }
+        div>ul>li{
+            background:yellowgreen;
+            margin-bottom:5px;
+        }
+    </style>
+</head>
+<body>
+    <h3>5장 예제</h3>
+    <hr>
+    <ul>
+        <li>I (<span>Love</span>) You</li>
+        <li>CSS is Cascading (<span>Style</span>) Sheet.</li>
+        <li>응답하라 (<span>1988</span>).</li>
+    </ul><br>
+    <p class="hidden">ovflow에 hidden 값을 적용하면 박스를 넘어가는 내용이 잘려 보이지 않습니다.</p>
+    <p class="visible">ovflow에 visible 값을 적용하면 콘텐츠가 박스를 넘어가서도 출력됩니다.</p>
+    <p class="scroll">ovflow에 scroll 값을 적용하면 박스에 스크롤바를 붙여 출력합니다.</p>
+    <br>
+    <div>
+        <ul>
+            <li>에스프레소</li>
+            <li>아메리카노</li>
+            <li>카페라떼</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>예제 3장 1</title>
+</head>
+<body>
+    <h3>캡션 붙이기 figure, figcaption</h3><hr>
+    <figure>
+        <img src="summer2.JPG" alt="잎새에 매달린 이슬">
+        <figcaption>싱그러운 여름</figcaption>
+    </figure>
+    <figure>
+        <img src="fall2.JPG" alt="붉게 타는 단풍">
+        <figcaption>총천연색 가을</figcaption>
+    </figure>
+    <h3>source랑 preload controls, poster</h3><hr>
+    <p>source 태그는 각 비디오 파일의 위치를 지정하기 위한 것. video태그 안에 preload controls 넣으면 재생 버튼 클릭하기 전까지 재생되지 않음. 썸네일처럼 하려면 poster="이미지파일"</p>
+    <video width="400" height="300" preload controls poster="ready.jpg">
+        <source src="포켓몬.mp4">
+    </video>
+</body>
+</html>

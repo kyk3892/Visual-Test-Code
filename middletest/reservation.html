@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>예약/예매하기</title>
+    <link href="game.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="login"><a href="login.html">로그인</a> | <a href="join.html">회원가입</a></div>
+        <nav id="menubar">
+            <ul>
+                <li><a href="gamezone.html" id="logo">Game-Zone</a></li>
+                <li title="현재 준비중입니다."><a href="user.html" target="_blank">이용안내</a></li>
+                <li title="현재 준비중입니다."><a href="money.html" target="_blank">이용요금/이벤트</a></li>
+                <li title="현재 준비중입니다."><a href="game.html" target="_blank">즐길거리</a></li>
+                <li title="현재 준비중입니다."><a href="qna.html" target="_blank">Q&A</a></li>
+                <li><a href="reservation.html">예매/예약</a></li>
+            </ul>
+        </nav>
+    </header><hr><br>
+    <nav id="side_menu">
+        <ul>
+            <li>
+                <a href="#" id="sidetop"><span>이용</span>안내</a>
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">운영시간</a></li>
+                    <li><a href="#">운휴안내</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" id="sidetop"><span>이용</span>요금/이벤트</a>
+                <ul>
+                    <li><a href="#">이용요금</a></li>
+                    <li><a href="#">이벤트</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" id="sidetop"><span>즐길</span>거리</a>
+                <ul>
+                    <li><a href="#">어트랙션</a></li>
+                    <li><a href="#">레스토랑</a></li>
+                    <li><a href="#">선물샵</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" id="sidetop">Q<span>&</span>A</a>
+                <ul>
+                    <li><a href="#">질문하기</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" id="sidetop"><span>예</span>매/<span>예</span>약</a>
+                <ul>
+                    <li><a href="#">예매하기</a></li>
+                    <li><a href="#">예약하기</a></li>
+                </ul>
+            </li>
+        </ul>    
+    </nav>
+    <section id="se1">
+        <div id="do"><span>예약</span>하기</div><hr>
+        <div id="vrpicture"><img src="vr메인사진.jpg" alt="vr"></div>
+        <div id="box1">
+            <div id="jum">[서울점]<br></div>
+            <div id="use"><span>GAME-ZONE</span> 이용권<br></div><br>
+            <div id="money">20%할인 <span>8,000원</span></div><br>
+        <form action="reservationprocess.html" method="post">
+            <div>옵션
+            <select id="select">
+                <option value="1">평일 2인 이용권</option>
+                <option value="2">평일 4인 이용권</option>
+                <option value="3">주말 2인 이용권</option>
+                <option value="4">주말 4인 이용권</option>
+            </select>
+            </div>
+        </div>
+        <div id="box2">
+        <fieldset id="fieldinfo">
+            <legend id="reinfo"><span>예매자</span> 정보</legend><Br>
+            <div id="lainfo">
+            <label id="name">예매자 이름 :  <input type="text" placeholder="김윤희"></label><br><br>
+            <label id="email">예매자 이메일 :  <input type="email" placeholder="kyk3892@naver.com"></label><br><br>
+            <label id="reday">예매 날짜 :  <input type="date" value="2020-05-06"></label><br><br>
+            <label id="bonday">생년월일 :  <input type="date" value="2001-02-19"></label><br><br>
+            <label id="phone">핸드폰 번호 :  <input type="tel" placeholder="010-7366-3892"></label><br>
+            </div>
+        </fieldset>
+        </div>
+        <div id="box3">
+            <h3 id="String"><span>개인정보</span> 수집 및 이용안내</h3>
+            <div id="info"><textarea cols="85" rows="10">정보통신망법 규정에 따라 네이버에 회원가입 신청하시는 분께 수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다. 서비스 이용 과정에서 이용자로부터 수집하는 개인정보는 아래와 같습니다. GameZone 내의 개별 서비스 이용, 이벤트 응모 및 경품 신청 과정에서 해당 서비스의 이용자에 한해 추가 개인정보 수집이 발생할 수 있습니다. 추가로 개인정보를 수집할 경우에는 해당 개인정보 수집 시점에서 이용자에게 ‘수집하는 개인정보 항목, 개인정보의 수집 및 이용목적, 개인정보의 보관기간’에 대해 안내 드리고 동의를 받습니다. 게임존 및 게임존 관련 제반 서비스(모바일 웹/앱 포함)의 회원관리, 서비스 개발・제공 및 향상, 안전한 인터넷 이용환경 구축 등 아래의 목적으로만 개인정보를 이용합니다. 부정이용으로 징계를 받기 전에 회원 가입 및 탈퇴를 반복하며 서비스를 부정 이용하는 사례를 막기 위해 탈퇴한 이용자의 휴대전화번호를 복호화가 불가능한 일방향 암호화(해시 처리)하여 6개월간 보관합니다.
+            </textarea>    
+            </div>
+            <div id="rabu">
+            <label><input type="radio" name="ok" value="1">동의합니다.</label>
+            <label><input type="radio" name="ok" value="0" checked>동의하지 않습니다.</label>
+            </div><br>
+            <input type="submit" value="예약완료" id="sub"></button>
+        </form>
+        </div>
+    </section>
+    <footer>
+        <div id="sns">
+        <table>
+            <tbody>
+                <caption>SNS 계정 </caption>
+                <tr id="sns">
+                    <td><a href="facebook.html"><img src="페북.png" alt="페북"></a></td>
+                    <td><a href="naver.html"><img src="네이버.png" alt="네이버"></a></td>
+                    <td><a href="instagram.html"><img src="인스타그램.jpg" alt="인스타"></a></td>
+                    <td><a href="youtube.html"><img src="유튜브.png" alt="유튜브"></a></td>
+                </tr>
+            </tbody>
+        </table>
+        </div><br><br>
+        <div id="last"><div><a href="gamezone.html" id="logo">Game-Zone</a></div><br>
+        <a href="#">회사소개</a> | <a href="#">고객센터</a> | <a href="#">이용약관</a><br><br>
+        <div>주소 : 서울 서대문구 가좌로 134 명지전문대학 이름 : 김윤희</div><br>
+        <div>학번 : 2020662002 이메일 : kyk3892@naver.com</div><br>
+        <div>해당 페이지는 프론트엔드 프로그래밍 중간고사 대체과제페이지 입니다.</div><br>
+        <div>Copyright 2020 by YunHui</div>
+        </div>
+    </footer>
+</body>
+</html>

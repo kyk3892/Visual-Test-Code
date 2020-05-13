@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>새로운 노드 추가</title>
+</head>
+<body>
+    <h1>스터디 회원 모집</h1>
+    <a href="#" onclick="more()"><p>더보기!</p></a>
+    <div id="info"></div>
+    <a href="#" onclick="addimg()"><p>이미지보기</p></a>
+    <div id="viewimg"></div>
+</body>
+<script>
+    function more(){
+        var newp = document.createElement("p") //p노드 만들기
+        var pnode = document.createTextNode("최신 웹 기술을 함께 공부할 회원을 모집합니다.")
+        
+        newp.append(pnode);
+        
+        document.getElementById("info").append(newp)
+    }
+
+    function addimg(){
+        var newimg = document.createElement("img")
+        var imgnode = document.createAttribute("src")
+        imgnode.value="logo.png"
+        
+        newimg.setAttributeNode(imgnode)
+        
+        document.getElementById("viewimg").append(newimg)
+    }
+</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3,6,9 게임</title>
+    <style>
+        span{
+            font-size:20px;
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>3,6,9 게임</h2>
+</body>
+<script>
+    var num = prompt("몇까지 계산할까요?")
+    for(i=1; i<=num; i++){
+        if(i%3==0){
+            continue;
+        }
+        else{
+            document.write("<span>"+i+" </span>")
+        }
+    }
+</script>
+</html>

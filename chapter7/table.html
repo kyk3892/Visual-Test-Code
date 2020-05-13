@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>표 응용 1</title>
+    <style>
+        table{
+            border-collapse:collapse;
+        }
+        td, th{
+            text-align:left;;
+            padding:5px;
+            height:15px;
+            width:100px;
+        }
+        thead, tfoot{
+            background:darkgray;
+            color:yellow;
+        }
+        tbody tr:nth-child(even){ /*짝수 <tr>*/
+            background:#CECEF6;
+        }
+        tbody tr:hover{
+            background:pink;
+        }
+        input[type=password]{
+            background:yellow;
+        }
+    </style>
+</head>
+<body>
+    <h3>2020년 1학기 성적</h3>
+    <hr>
+    비밀번호 입력 : <input type="password">
+    <br><br>
+    <table>
+        <thead>
+            <tr><th>이름</th><th>HTML</th><th>CSS</th></tr></tr>
+        </thead>
+        <tfoot>
+            <tr><th>합</th><th>410</th><th>349</th></tr></tr>
+        </tfoot>
+        <tbody>
+            <tr><th>황기태</th><th>80</th><th>70</th></tr></tr>
+            <tr><th>이재문</th><th>95</th><th>99</th></tr></tr>
+            <tr><th>김윤희</th><th>100</th><th>100</th></tr></tr>
+            <tr><th>이병은</th><th>85</th><th>90</th></tr></tr>
+            <tr><th>김남윤</th><th>50</th><th>40</th></tr></tr>
+        </tbody>
+    </table>
+</body>
+</html>

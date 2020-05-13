@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>자리 배치도</title>
+    <style>
+        table{
+            border:1px solid black;
+            border-collapse:collapse; /* 겹치는 선 한줄로 표시*/
+        }
+        td{
+            border:1px solid black;
+            margin:10px;
+            padding:5px;
+            border-collapse:collapse;
+        }
+    </style>
+</head>
+<body>
+
+</body>
+<script>
+    var student = prompt("수강생은 몇 명입니까?")
+    var colnum = prompt("한줄에 몇 명씩 앉습니까?")
+
+    if(student%colnum==0){
+        rownum = parseInt(student/colnum)
+    }
+    else{
+        rownum = parseInt(student/colnum)+1
+    }
+
+    document.write("<h1>컴퓨터공학과 자리배치도</h1>")
+    document.write("<br><br>")
+    document.write("<table>")
+
+    for(i=0; i<rownum; i++){
+        document.write("<tr>")
+        for(j=1; j<=colnum; j++){
+            num = i*colnum+j
+            if(num>student) {
+                break;
+            }
+            else{
+                document.write("<td>컴공 "+num+"번</td>")
+            }
+        }
+        document.write("</tr>")
+    }
+    document.write("</table>")
+</script>
+</html>

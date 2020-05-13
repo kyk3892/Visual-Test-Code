@@ -1,0 +1,282 @@
+/*탑메뉴바*/
+#login{
+    text-align:right;
+}
+#logo{
+    font-size:37.5px;
+    font-weight:bold;
+    color:#FA5858;
+    text-shadow: 4px 4px 3px #610B0B;
+}
+#menubar>ul{
+    margin:0;
+    padding:0;
+    width:100%;
+}
+#menubar>ul>li{
+    font-size:25px;
+    font-weight:bold;
+    display:inline-block;
+    list-style-type:none;
+    padding:0px 80px;
+    text-align:center;
+    margin-bottom:20px;
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+a:hover{
+    color:red;
+}
+#menubar a:hover{
+    color:#5858FA;
+}
+/*탑메뉴바 여기까지*/
+/*footer 메뉴바*/
+footer{
+    display:inline-block;
+}
+footer img{
+    width:50px;
+    height:50px;
+}
+#sns table{
+    display:flex;
+    width:2000px;
+    justify-content:center;
+    margin-top:30px;
+    margin-left:40px;
+    background-color:#CED8F6;
+    padding:10px;
+}
+caption{
+    font-size:25px;
+    font-weight:bold;
+    margin-top:10px;
+}
+/*footer 메뉴바 여기까지*/
+#mainpicture{
+    float:left;
+    padding:0px 0px 0px 20px;
+    width:60%;
+}
+#explanation{
+    display:inline-block;
+    border:1px solid white;
+    border-top-width:50px;
+    width:570px;
+    text-align:center;
+    padding:0px 20px 10px 50px
+}
+#explanation>p{
+    font-weight:bold;
+}
+#event{
+    display:inline-block;
+    border:1px solid white;
+    border-left-width:180px;
+    border-right-width:150px;
+    border-top-width:30px;
+    border-bottom-width:100px;
+    text-align:center;
+}
+#event>img{
+    float: left;
+    width:300px;
+    height:401px;
+}
+#one span{
+    color:#FE2E2E;
+}
+h2:first-letter{
+    color:#5858FA;
+}
+.reservation{
+    float:left;
+    width:25%
+}
+#buy,#buy2{
+    border-radius: 15px;
+    width:300px;
+    height:150px;
+    font-size:25px;
+    font-weight:bold;
+}
+.travel{
+    float:left;
+    width:25%
+}
+.travel>img{
+    width:300px;
+    height:300px;
+}
+.travel p{
+    font-size:19px;
+    font-weight:bold;
+}
+.notice{
+    float:left;
+    width:25%;
+}
+#noticea{
+    font-weight:bold;
+    font-size:18px;
+}
+.time{
+    float:left;
+    width:25%;
+}
+#hour{
+    padding: 40px;
+    font-size:20px;
+    font-weight:bold;
+}
+#hour span{
+    color:#FE2E2E;
+}
+#two{
+    text-align:center;
+}
+#two hr{
+    width:90%;
+}
+#noview{
+    margin:auto;
+    text-align:center;
+}
+.game{
+    float:left;
+    width:100%;
+    text-align:center;
+}
+.game #play{
+    margin:auto;
+    text-align:center;
+}
+.game td {
+    border:1px solid gray;
+    padding:10px;
+}
+.game #say{
+    padding:30px;
+    font-weight:bold;
+    width:370px;
+}
+.game img{
+    width:520px;
+    height:300px;
+}
+.game span{
+    color:#DF0101;
+    font-weight:bold;
+    font-size:25px;
+}
+/*메인페이지 끝*/
+#side_menu{
+    float:left;
+    width:15%;
+    
+    font-size:17px;
+}
+#side_menu span{
+    color:#5858FA;
+}
+#side_menu ul{
+    margin-left:25px;
+    list-style-type: square;
+    padding:20px;
+    margin-bottom:90px;
+}
+#sidetop{
+    font-size:18px;
+    font-weight: bold;
+}
+#se1{
+    float:left;
+    border:1px solid gray;
+    width:70%;
+    padding:40px;
+}
+#do{
+    font-size: 40px;
+    font-weight:bold;
+}
+#do>span{
+    color:#DF0101;
+}
+#vrpicture img{
+    float:left;
+    width:660px;
+    height:460px;
+}
+#box1{
+   float:left;
+   width:580px;
+   height:400px;
+   padding:30px;
+   font-size:40px;
+   font-weight: bold;
+}
+#use>span{
+    color:#5858FA;
+}
+#money>span{
+    color:#DF0101;
+}
+#select{
+    width:250px;
+    height:30px;
+}
+#box2{
+    float:left;
+    width:597px;
+    height:460px;
+    padding:30px;
+}
+#fieldinfo{
+    height:450px;
+    font-size:20px;
+    font-weight:bold;
+}
+#fieldinfo input{
+    width:300px;
+    height:30px;
+    margin-left:10px;
+}
+#reinfo{
+    font-size:30px;
+}
+#reinfo span{
+    color:#DF0101;
+}
+#lainfo{
+    margin-left:10px;
+}
+#box3{
+    float:left;
+    width:597px;
+    height:460px;
+    padding:30px;
+}
+#String{
+    font-size:30px;
+    font-weight:bold;
+    margin-top:10px;
+}
+#String span{
+    color:#DF0101;
+}
+#rabu{
+    text-align:right;
+}
+#sub{
+    width:550px;
+    height:150px;
+    border-radius: 10px;
+    margin-left:30px;
+    font-size:30px;
+    font-weight:bold;
+    background-color:#FAAC58;
+    color:white;
+}

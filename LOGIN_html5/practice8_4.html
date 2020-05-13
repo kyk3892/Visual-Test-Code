@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>함수</title>
+    <style>
+        #num{
+            border:1px solid gray;
+            margin:10px 10px 10px 10px;
+            border-radius:10px;
+        }
+    </style>
+
+</head>
+<body>
+    <h3>함수</h3>
+    <form>
+        <input type="button" value="4로 바꾸기" onclick="changeTo('4.jpg')">
+        <input type="button" value="2로 바꾸기" onclick="changeTo('2.jpg')">
+    </form>
+    <div>
+        <img src="2.jpg" id="num">
+    </div>
+</body>
+<script>
+    function changeTo(myImg){
+        var myNum = document.getElementById("num");
+        myNum.src = myImg;
+    }
+</script>
+</html>

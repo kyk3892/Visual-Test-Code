@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>논리형 자바스크립트</title>
+</head>
+<body>
+    <p>자바 스크립트를 좋아하시나요?</p>
+    <p>논리형이므로 변수 true, false를 보내야함</p>
+    <form>
+        <input type="button" value="yes" onclick="favorite(true)">
+        <input type="button" value="no" onclick="favorite(false)">
+    </form>
+<script>
+    function favorite(choice){
+        var choice;
+        if(choice==true){
+            alert("Yes를 선택하셨군요. 자바스크립트로 다이내믹한 웹을 만들어보세요")
+        }
+        else{
+            alert("이제부터 조금씩 자바스크립트와 친해져보세요.")
+        }
+    }
+</script>
+</body>
+</html>

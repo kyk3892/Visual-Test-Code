@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>innerHTML 프로퍼티</title>
+    <style>
+        #light input {
+            margin:10px 30px 50px 20px;
+            width:80px;
+            padding:10px;
+            background-color:#a9fcff;
+            border:1px solid black;
+            font-size:16px;
+        }
+        img {
+            margin-left:50px;
+        }
+    </style>
+</head>
+<body>
+    <p>질문 : <span id="quest">웹 표준 기술은?</span></p>
+    <p>해답 : <span id="sol">HTML5</span></p>
+    <form>
+        <input type="button" value="해답 바꾸기" onclick="modifysol('HTML5+CSS3')">
+    </form>
+    <hr>
+    <form>
+        <div id="light">
+            <input type="button" value="on" onclick="turnlight('on')">
+            <input type="button" value="off" onclick="turnlight('off')">
+        </div>
+    </form> 
+    <img src="off.jpg" id="bulb">
+</body>
+<script>
+    function modifysol(newsol){
+        document.getElementById("sol").innerHTML = newsol;
+    }
+</script>
+<script>
+    function turnlight(onoff){
+        img = document.getElementById("bulb");
+
+        if(onoff=="on"){
+            img.src="on.jpg"
+        }
+        else{
+            img.src="off.jpg"
+        }
+    }
+</script>
+</html>

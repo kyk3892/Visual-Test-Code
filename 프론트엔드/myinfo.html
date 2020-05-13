@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>정보 입력 폼</title>
+</head>
+<body>
+    <style>body { background-color : mistyrose; }</style>
+    <h1>Student Information Insert Form</h1><hr>
+    <form action="localhost/infoprocess.php" method="post">
+        <p>
+            <label>이름 : <input type="text" id="name"></label>
+        </p>
+        <p>
+            <label>학과 : <input type="text" id="department"></label>
+        </p>
+        <p>
+            <label>학번 : <input type="text" id="idx"></label>
+        </p>
+        <p>
+            <label>관심사/ 관심 영역 : <input type="attention"></label>
+        </p>
+        <p>
+            <label>내용 :<br>
+            <textarea cols="50" rows="20"></textarea></label>
+        </p>
+        <p>학과 : 
+            <select name="class">
+                <option value="1">소프트콘텐츠학과</option>
+                <option value="2">기계공학과</option>
+                <option value="3">컴퓨터공학과</option>
+                <option value="4">전기전자공학과</option>
+            </select>
+        </p>
+        <p>이메일
+            <input type="text" id="email">@
+            <select name="email">
+                <option value="1">naver.com</option>
+                <option value="1">gmail.com</option>
+                <option value="1">daum.net</option>
+            </select>
+        </p>
+        <p>
+            입력 힌트 : <input type="text" id="name" placeholder="입력힌트">
+        </p>
+        <p>
+            <h3>좋아하는 음식</h3>
+            <label>
+                <input type="radio" name="food" value="1">짬뽕
+                <img src="짬뽕.jpg" alt="짬뽕사진" width="300" heigh="300">
+            </label>
+            <label>
+                <input type="radio" name="food" value="2">떡볶이
+                <img src="신전떡볶이.jpg" alt="떡볶이사진" width="300" heigh="300">
+            </label><br><br>
+            <label>
+                <input type="radio" name="food" value="3">치킨
+                <img src="치킨.png" alt="치킨사진" width="300" heigh="300">
+            </label>
+            <label>
+                <input type="radio" name="food" value="4">피자
+                <img src="피자.png" alt="피자사진" width="300" heigh="300">
+            </label>
+        </p>
+        <p>
+            <input type="submit">
+            <button type="reset">리셋</button>
+        </p>
+    </form>
+</body>
+</html>

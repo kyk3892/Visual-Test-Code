@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>5장 예제 연습++</title>
+    <style>
+        nav{
+            background:olive;
+        }
+        ul{
+            margin:0;
+            padding:0;
+            width:567px;
+        }
+        ul li{
+            display:inline-block;
+            list-style-type:none;
+            padding:0px 15px;
+        }
+        a{
+            text-decoration:none;
+            color:white;
+        }
+        a:hover{
+            color:violet;
+        }
+        table{
+            border-collapse:collapse;
+        }
+        th,td{
+            text-align:left;
+            padding:3px;
+            height:15px;
+            width:100px;
+        }
+        thead, tfoot{
+            background:gray;
+            text-align:left;
+            color:yellow;
+        }
+        tbody tr:nth-child(even){
+            background:lightblue;
+        }
+        tbody tr:hover{
+            background:pink;
+        }
+        input[type=text]{
+            color:red;
+        }
+        input[type=text]:focus{
+            font-size:120%;
+        }
+        input[type=text]:hover, input[type=email]:hover{
+            background:lightskyblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <h3>5장 예제 연습 ++</h3>
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">에소프레소</a></li>
+            <li><a href="#">아메리카노</a></li>
+            <li><a href="#">카페라떼</a></li>
+            <li><a href="#">Q&A</a></li>
+        </ul>
+    </nav><br><br>
+    <table>
+        <thead>
+            <tr><th>이름</th><th>HTML</th><th>CSS</th></tr>
+        </thead>
+        <tfoot>
+            <tr><th>합</th><th>310</th><th>249</th></tr>
+        </tfoot>
+        <tbody>
+            <tr><td>황기태</td><td>80</td><td>70</td></tr>
+            <tr><td>이재문</td><td>95</td><td>99</td></tr>
+            <tr><td>이병은</td><td>85</td><td>90</td></tr>
+            <tr><td>김남윤</td><td>50</td><td>40</td></tr>
+        </tbody>
+    </table><br><br>
+    <form>
+        <p>
+            <span>이름  </span><input type="text" placeholder="name">
+        </p>
+        <p>
+            <span>이메일  </span><input type="email" placeholder="kyk3892@naver.com">
+        </p>
+        <p>
+            <span>내용  </span><textarea cols="30" rows="5" placeholder="메시지를 남겨주세요"></textarea>
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>이미지 확대하기</title>
+</head>
+<body>
+    <div><img src="bee.jpg" id="bee" width="200" height="130" onmouseover="big()" onmouseout="small()"></div>
+    <p>초기길이 무조건 정해줘야됨</p>
+</body>
+<script>
+    function big(){
+        document.getElementById('bee').width="500"
+        document.getElementById('bee').height="340"
+    }
+
+    function small(){
+        document.getElementById('bee').width="200"
+        document.getElementById('bee').height="130"
+    }
+</script>
+</html>
