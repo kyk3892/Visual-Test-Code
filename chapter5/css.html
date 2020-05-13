@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>셀렉터 만들기</title>
+    <style>
+        h3:first-letter{color:red;}
+        a:visited{color:green;}
+        a:link{color:black;}
+        li:hover{background-color:beige;}
+        li{background-color:mistyrose;}
+        a:active{color:red;}
+        li{color:red;}
+        li > strong{color:blue;}
+        div > strong{background:yellow;}
+    </style>
+</head>
+<body class="main">
+    <h3>Web Programming</h3>
+    <hr>
+    <div class="main">
+    <div>이번학기 <strong>학습 내용</strong></div>
+    <ul id="list">
+        <li>HTML5</li>
+        <li><strong>CSS</strong></li>
+        <li>JAVASCRIPT</li>
+    </ul>
+    <ol>
+        <li><a href="https://www.w3schools.com" target="_blank">W3school</a></li>
+        <li><a href="https://www.google.com" target="_blank">구글</a></li>
+        <li><a href="https://www.rkskek.com">없는 사이트</a></li>
+    </ol>
+    <h3>부모 스타일 상속</h3>
+    <hr>
+    <p style="color:blue">자식 태그는 부모의 스타일을
+        <em style="font-size:25px">상속</em>받는다.
+    </p>
+    <div>2020년 1학기</div>
+</div>
+</body>
+</html>
