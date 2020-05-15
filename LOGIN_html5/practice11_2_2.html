@@ -47,13 +47,29 @@
         .italic-text {
             font-style:italic;
         }
-        #bttn1, #bttn2 {
+        #bttn1, #bttn2, #bttn3, #bttn4, #bttn5, #bttn6 {
             border:1px solid #222;
             padding:5px;
             margin:10px 5px;
         }
         hr {
             clear: both;
+        }
+        .bluetxt{
+            color:blue;
+        }
+        .block0{
+            color:blue;
+        }
+        .block1{
+            color:orange;
+        }
+        .block2{
+            color:green;
+        }
+        .newClass{
+            background-color:#222;
+            color:white;
         }
     </style>
     <script src="jquery-3.5.1.js"></script>
@@ -62,8 +78,6 @@
             $("#bttn1").click(function () {
                 $("p").attr("class", "italic-text");
             });
-        });
-        $(document).ready(function(){
             $("#bttn2").click(function(){
                 $("#intro1 a").attr({
                     "rel":"external",
@@ -71,13 +85,33 @@
                     "title":"인피니티북스 홈페이지로 연결합니다."
                 });
             });
-        })                    
+            $("#bttn3").click(function(){
+                $("article:first p").addClass("bluetxt")
+            });
+            $("#bttn4").click(function(){
+                $("article").addClass(function (i){
+                    return "block"+i
+                });
+            });
+            $("#bttn5").click(function(){
+                $("article").removeClass(function(i){
+                    return "block"+i
+                });
+            });
+            $("#bttn6").click(function(){
+                $("body, a:link, a:visited").toggleClass("newClass");
+            });
+        });    
     </script>
 </head>
 <body>
     <form id="topform">
         <input type="button" id="bttn1" value="텍스트를 이탤릭체로">
         <input type="button" id="bttn2" value="링크를 새 창으로 열기">
+        <input type="button" id="bttn3" value="첫 단락을 파란색으로">
+        <input type="button" id="bttn4" value="단락의 색상을 각각 다르게">
+        <input type="button" id="bttn5"value="단락의 색상을 원래대로">
+        <input type="button" id="bttn6" value="배경색과 글자색 전환하기">
     </form>
     <nav> 
         <ul>
