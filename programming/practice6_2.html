@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>함수 만들기</title>
+</head>
+<body>
+    <h3>구구단 출력 함수 만들기</h3><hr>
+</body>
+<script>
+    var question = prompt("구구단 몇 단을 원하세요?");
+
+    function gugudan(question){ //변수 받음
+        var num = parseInt(question); //question 물은 값 숫자로 변환
+        if(isNaN(num) || question<1 || question>9){
+            alert("잘못입력하셨습니다.");
+            return;
+        }
+        for(var i=1; i<=9; i++){
+            document.write(num+"x"+i+"="+num*i+"<br>");
+        }
+    }
+    gugudan(question);
+</script>
+</html>
