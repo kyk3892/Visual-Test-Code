@@ -66,7 +66,7 @@ print(f"나는 {age}살이며, {color}색을 좋아해요.") #앞에 f붙이면 
 print("탈출문자")
 print("백문이 불여일견 백견이 불여일타")
 print("백문이 불여일견 \n백견이 불여일타")
-print("저는 \"나도코딩\"입니다.")
+print("저는 \"김윤희\"입니다.")
 print("Red Apple\rPine") #\r : 커서를 맨 앞으로 이동
 print("Redd\bApple") #\b : 한 글자 삭제
 print("Red \t Apple")
