@@ -20,9 +20,10 @@ function Pipe(){
         fill(255);
         if(this.highlight){ //닿았을때 빨간색으로 색상변경
             fill(255, 0, 0);
+            alert("파이프에 닿았습니다.")
         }
         rect(this.x, 0, this.w, this.top);
-        rect(this.x, height-this.bottom, this.w, this.bottom);
+        rect(this.x, height-this.bottom, this.w, this.bottom); 
     }
     this.update = function(){
         this.x -= this.speed;
