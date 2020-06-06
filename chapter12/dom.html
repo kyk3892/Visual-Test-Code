@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML DOM 트리</title>
+    <script>
+
+    </script>
+</head>
+<body>
+    <h3>DOM 객체 p의 프로퍼티, 스타일, 이벤트 리스너</h3>
+    <hr>
+    <p id = "PP"
+        style = "color:white;background:violet"
+        onclick="this.style.color='black'">글자를 누르면 <span style="color:red;font-weight:bold">이 문장</span>을 제외한 글자의 색이 변합니다
+    </p>
+    <p id = "PP2"
+        style = "color:skyblue;background:violet"
+        onclick="this.style.color='black'">글자를 누르면 <span style="color:yellow;font-weight:bold">이 문장</span>을 제외한 글자의 색이 변합니다
+    </p>
+    <script>
+        var p = document.getElementById("PP") //현재 윗문장만 가져와서 보여줌
+        var text = "p.id = "+p.id+"\n";
+        text += "p.tagName = "+p.tagName+"\n";
+        text += "p.innerHTML = "+p.innerHTML;
+        text += "p.style.color = "+p.style.color+"\n";
+        text += "p.onclick = "+p.onclick;
+        text += "p.childElementCount = "+p.childElementCount+"\n";
+        text += "너비 = "+p.offsetWidth+"   ";
+        text += "높이 = "+p.offsetHeight+"\n";
+        alert(text);
+    </script>
+</body>
+</html>
