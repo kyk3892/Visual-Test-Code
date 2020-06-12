@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>addEventListener</title>    
+</head>
+<body>
+    <h3>addEventListener</h3>
+    <hr>
+    <button id="button">버튼</button>
+    <script>
+        var button = document.getElementById("button");
+        button.addEventListener("click", function() { alert("ONE") });
+        button.addEventListener("click", function() { alert("TWO") });
+        button.addEventListener("click", function() { alert("THREE") });
+    </script>
+</body>
+</html>

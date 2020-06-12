@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>dom 예제</title>
+    <style>
+        span{
+            font-weight:bold;
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h3>Dom 예제</h3>
+    <hr>
+    <div id="myDiv"></div>
+    <script>
+        var div = document.getElementById("myDiv"); // id가 myDiv인 DOM 객체를 알아냄
+        var span = document.createElement("span"); //<span> 태그를 나타내는 DOM 객체 동적 생성
+        span.innerHTML = "hello"; // “hello”를 <span> 태그의 텍스트로 삽입
+        div.appendChild(span); // span을 div의 자식으로 삽입
+    </script>
+</body>
+</html>
