@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML DOM 트리</title>
+    <style>
+        html { border:3px solid yellow }
+        body{ border:3px solid black }
+        p{ border:3px solid red }
+        form{ border:3px solid blue }
+    </style>
+</head>
+<body>
+    <p style="color:blue">이것은 <span style="color:red">문장입니다.</span></p>
+    <form>
+        <input type="text">
+        <input type="button" value="테스트" id="button">
+        <hr>
+    </form>
+    <div id="div" style="color:green"></div>
+    <script>
+        var div = document.getElementById("div");
+        var button = document.getElementById("button");
+        
+        button.addEventListener("click", capture, true); //capture함수, capture리스너 사용
+        document.body.addEventListener("click", capture, true);
+        button.addEventListener("click", bubble, false);
+        document.body.addEventListener("click", bubble, false);
+
+        function capture(e){
+            var obj = e.currentTarget;
+            var tagName = obj.tagName;
+            div.innerHTML += "<br>capture 단계 : "+tagName+" 태그 "+e.type+"이벤트"
+        }
+        function bubble(e){
+            var obj = e.currentTarget;
+            var tagName = obj.tagName;
+            div.innerHTML += "<br>buttle 단계 : "+tagName+" 태그"+e.type+"이벤트"
+        }
+    </script>
+</body>
+</html>

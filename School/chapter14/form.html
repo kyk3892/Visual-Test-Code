@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>이름, 학번 입력</title>
+    <script>
+        function checkFilled(obj){
+            if(obj.value==""){
+                alert(obj.id+"을 입력하시오.");
+                obj.focus();
+            }
+        }
+        function welcome(){
+            alert("반갑습니다.")
+        }
+    </script>
+</head>
+<body onload="document.getElementById('name').focus()">
+    <h3>onsubmit</h3>
+    <hr>
+    <p>이름과 학번을 입력하고 클릭 버튼을 누르세요</p>
+    <form>
+        <p>이름 <input type="text" id="name" onblur="checkFilled(this)"></p>
+        <p>학번 <input type="text" id="classNumber" onblur="checkFilled(this)">
+        <input type="submit" value="클릭" onclick="welcome()"></p>
+    </form>
+    
+</body>
+</html>
