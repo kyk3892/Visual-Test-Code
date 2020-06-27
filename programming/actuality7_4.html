@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>방문 요일</title>
+</head>
+<body>
+    <h3>일요일은 pink, 다른 요일은 gold 배경</h3>
+    <hr>
+    <script>
+        var today = new Date();
+        var day = today.getDay();
+        document.write("오늘 : "+today.getDate()+"일,");
+        if(day==0) {document.write("일요일")}
+        if(day==1) {document.write("월요일")}
+        if(day==2) {document.write("화요일")}
+        if(day==3) {document.write("수요일")}
+        if(day==4) {document.write("목요일")}
+        if(day==5) {document.write("금요일")}
+        if(day==6) {document.write("토요일")}
+        if(1<=day && day<=6) {document.body.style.backgroundColor = "gold"}
+        else{
+            document.body.style.backgroundColor = "pink"
+        }
+    </script>
+</body>
+</html>
