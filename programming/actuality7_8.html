@@ -22,9 +22,8 @@
 <body>
     <h3>16개의 랜덤한 색 만들기</h3>
     <hr>
-    <div style="background-color:rgb(155,221,238)">rgb(155,221,238)</div> 
     <script>
-        document.write(randomInt()) //랜덤값 확인
+        var num = [];
         for(var i=0; i<16; i++){
             num[i] = randomInt();
             var str = "<div style='background-color:rgb("+num[i]+")'>rgb("+num[i]+")</div>";            

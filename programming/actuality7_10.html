@@ -3,8 +3,9 @@
 <head>
     <title>book 객체 배열 만들기</title>
     <script>
-        function max(){
-            for(var i=0; i<bookArray.length; i++){
+        function Max(){
+            var max = bookArray[0].price;
+            for(var i=1; i<bookArray.length; i++){
                 if(max < bookArray[i].price){
                     max = bookArray[i].price
                 }
@@ -29,7 +30,7 @@
             book.title = strs[0];
             book.author = strs[1];
             book.price = strs[2];
-            book.max = max;
+            book.max = Max;
             bookArray[i] = book;         
         }
         for(var i=0; i<bookArray.length; i++){
@@ -37,7 +38,7 @@
             document.write(bookArray[i].author+", ")
             document.write(bookArray[i].price+"<br>")
         }
-        document.write("<hr>가장 가격이 비싼 책은 "+max())
+        document.write("<hr>가장 가격이 비싼 책은 "+Max())
     </script>
 </body>
 </html>
