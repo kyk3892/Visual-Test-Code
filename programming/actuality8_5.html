@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Z-index로 카드 쌓기</title>
+    <style>
+        div{
+            position:absolute;
+        }
+        img{
+            position:absolute;
+        }        
+    </style>
+</head>
+<body>
+    <h3>z-index 프로퍼티</h3>
+    <hr>
+    <div>
+        <img id="하트A" src="media/하트A.jpg" alt="하트A" width="100" height="140">
+        <img id="스페이드5" src="media/스페이드5.jpg" alt="스페이드5" width="100" height="140">
+        <img id="다이아몬드7" src="media/다이아몬드7.jpg" alt="다이아몬드7" width="100" height="140">
+        <img id="다이아몬드K" src="media/다이아몬드K.jpg" alt="다이아몬드K" width="100" height="140">
+    </div>
+    <script>
+        var pic = document.getElementsByTagName("img");
+        for(var i=0; i<pic.length; i++){
+            var obj = pic[i];
+            obj.style.zIndex = i;
+            obj.style.left = "10px";
+            obj.style.top = "10px";
+            obj.onclick = show;
+        }
+        function show(){
+            for(var i=0; i<pic.length; i++){
+                var obj = pic[i];
+                obj.style.zIndex++;
+                obj.style.zIndex %= pic.length; //맨밑으로 보내기 위해서
+            }
+        }
+    </script>
+</body>
+</html>

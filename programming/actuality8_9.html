@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>라면을 끓이는 순서</title>
+</head>
+<body>
+    <h3>라면을 끓이는 순서</h3>
+    <hr>
+    <ol type="A" style="background-color:yellowgreen" onclick="show(this)">
+        <li>물을 끓인다.</li>
+    </ol>
+    <script>
+        function show(obj){
+            var str = prompt("라면을 끓이는 순서를 입력하라");
+            var newLi = document.createElement("li");
+            newLi.innerHTML = str;
+            obj.appendChild(newLi); //부모 태그 추가하기
+        }
+    </script>
+</body>
+</html>

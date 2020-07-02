@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>클릭하면 90도 회전합니다.</title>
+</head>
+<body>
+    <h3>클릭하면 90도 회전합니다.</h3>
+    <hr>
+    <img src="media/1.png" id="bab" width="200px" height="200px" alt="스폰지밥">
+    <script>
+        var num = 90;
+        var obj = document.getElementById("bab");
+        obj.onclick = tra;
+        function tra(){
+            obj.style.transform = "rotate("+num+"deg)";
+            num += 90;
+        }
+    </script>
+</body>
+</html>
