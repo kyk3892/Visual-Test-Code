@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>갬블링 게임</title>
+    <script>
+        function ran(obj){
+            var ranNum = Math.floor(Math.random()*3);
+            obj.innerHTML = ranNum;
+            end();
+        }
+        function end(){
+            var num1 = document.getElementById("n1").innerHTML;
+            var num2 = document.getElementById("n2").innerHTML;
+            var num3 = document.getElementById("n3").innerHTML;
+            var text = document.getElementById("result");
+            if(num1==num2==num3){
+                text.innerHTML = "Success(click here to do again)";
+            }
+            else{
+                text.innerHTML = "fail(click here to do again)";
+            }
+        }
+    </script>
+    <style>
+        #num{
+            display:inline-block;
+            background-color:blanchedalmond;
+            border:1px solid violet;
+            font-size:60px;
+            width:20%;
+            padding:10px;
+            color:blue;
+            font-weight:bold;
+        }
+        #result{
+            font-family:Arial;
+            color:blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h3>갬블링 게임</h3>
+    <p>각 숫자를 클릭하면 0에서 2사이의 난수로 바뀝니다. 모두 같은 수가 나오면 승리합니다.</p>
+    <hr>
+    <div id="num">
+        <span id="n1" value="0" onclick="ran(this)">0</span>
+        <span id="n2" value="0" onclick="ran(this)">0</span>
+        <span id="n3" value="0" onclick="ran(this)">0</span>
+    </div>
+    <script>
+        end();
+    </script>
+    <div id="result"></div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>클릭하면 90도 회전합니다.</title>
+    <script>
+        var num = 90;
+        function rota(obj){
+            obj.style.transform="rotate("+num+"deg)";
+            num += 90;
+        }
+    </script>
+</head>
+<body>
+    <h3>클릭하면 90도 회전합니다.</h3>
+    <hr>
+    <img src="../programming/media/1.png" onclick="rota(this)">
+</body>
+</html>

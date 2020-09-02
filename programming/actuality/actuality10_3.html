@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>옵션 선택으로 사이트 접속</title>
+    <script>
+        function site(select){
+            win = window.open("", "","width=500,height=400")
+            win.location = select.options[select.selectedIndex].value;
+        }
+    </script>
+</head>
+<body>
+    <h3>옵션 선택으로 사이트 접속</h3>
+    <p>옵션 선택 마다 새 윈도우에 접속합니다.</p>
+    <hr>
+    <p>접속할 사이트</p>
+    <select id="site" onchange="site(this)">
+        <option value="http://www.naver.com" selected>네이버</option>
+        <option value="http://www.google.com">구글</option>
+        <option value="http://www.oracle.com">오라클</option>
+    </select>
+
+</body>
+</html>
